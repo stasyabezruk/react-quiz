@@ -1,0 +1,33 @@
+.Drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transform: translateX(0px);
+  transition: transform .22s ease-in;
+  background: white;
+  z-index: 51;
+
+  &.close {
+    transform: translateX(-300px);
+  }
+
+  ul {
+    list-style: none;
+
+    li a {
+      font-size: 26px;
+      font-weight: bold;
+      padding: 20px 0;
+      color: dimgrey;
+      text-decoration: none;
+      display: block;
+    }
+
+    li a:hover, .active {
+      opacity: .6;
+    }
+  }
+}
+
